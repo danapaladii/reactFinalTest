@@ -26,6 +26,10 @@ h3, h4 {
   color:azure;
 }
 
+p {
+  font-weight: bold;
+}
+
 .place{
   margin-top: 100px;
   
@@ -41,12 +45,21 @@ h3, h4 {
   .about {
     display: flex;
     justify-content: center;
+  
     
   }
 
   .text {
     color: azure;
   }
+
+  .textone {
+    margin: 100px;
+    border: 1px solid azure;
+    padding: 10px;
+  }
+
+
 
   .container {
     display: flex;
@@ -83,4 +96,92 @@ nav {
     border-bottom: 1px solid azure;
     text-transform: uppercase;
     
+    }
+
+    .cont {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 100px;
+    
+    }
+
+    .categoryButtonSelected {
+      background-color: whitesmoke;
+
+    }
+
+
+    .categoryButton {
+      cursor: pointer;
+      margin: 20px;
+      padding: 10px;
+    }
+
+    .categoryButton:hover {
+      background-color: grey
+    }
+
+    .cartIcon {
+      width: 70px;
+    }
+
+    .deleteIcon{
+      width: 50px;
+    }
+
+    .contactIcon {
+      width: 30px;
+    }
+
+    .picOne {
+      border-radius: 30%;
+    }
+
+    @media all and (max-width:500px) {
+      .image {
+        width: 800px;
+        height: 500px;
+      }
+
+      h1 {
+        font-size: medium;
+      }
+
+      h2 {
+        font-size: large;
+      }
+
+      .link {
+        font-size: 10px;
+        padding: 5px 20px;
+      }
+
+      .textone {
+        margin: 5px;
+        padding: 60px;
+      }
+
+      .textaboutone {
+        padding-top: 70px;
+        
+      }
+
+      .pic {
+        width: 300px;
+      }
+
+      button {
+        padding: 5px;
+        width: 100px;
+      }
+
+      .shrift {
+        font-size: small;
+        padding: 40px;
+      }
+
+      .picOne {
+        width: 150px;
+      }
+
     }

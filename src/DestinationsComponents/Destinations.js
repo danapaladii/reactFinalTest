@@ -1,9 +1,19 @@
-import  dataOne from '../dataOne.js';
+import  dataDestinations from '../dataDestinations.js';
 import Destination from "./Destination";
+import { useSelector } from "react-redux";
+import { getSelectedCategory } from "../redux/destinationsSlice";
 
 const Destinations = () => {
+
+    const selectedCategory = useSelector(getSelectedCategory);
+
 return( <div>
-    {dataOne.map(destination => <Destination destination={destination} />)}
+    {dataDestinations
+    .filter(destination => {
+        if(selectedCategory === 'All') return true;
+        return selectedCategory === destination.category;
+    })
+    .map(destination => <Destination destination = {destination} />)}
     </div>)
 }
 

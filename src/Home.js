@@ -8,7 +8,7 @@ function Home() {
         <h1>On Top of the World</h1>
         <h2>Hiking Tours</h2>
         
-        <img src={hiking} width="1520px" height="1000px" alt="hiking" />
+        <img className="image" src={hiking} width="1520px" height="1000px" alt="hiking" />
     </div>
     )
 }

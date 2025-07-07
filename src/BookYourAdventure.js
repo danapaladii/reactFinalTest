@@ -6,24 +6,21 @@ import "./App.css";
 
 function BookYourAdventure() {
 
-   
-
     return(
         <div>
-        <div className="container">
-        <h1 className="text">Book Your Adventure</h1>
-        </div> 
-        
-        <div className="container">
+
+        <div className="cont">
+            <div>
             <AllCategories />
-        </div> 
-        <div className="container">
             <Cart/>
-        </div> 
+            </div> 
+        
     
-        <div className="container place">
-        <Destinations />
+            <div>
+            <Destinations />
+            </div>
         </div>
+
         </div>
     )
 }

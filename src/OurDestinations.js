@@ -31,11 +31,11 @@ function OurDestinations() {
     return (
     <div>
     <div className="container">
-        <img src={image} width="700px" alt="place" />
+        <img className="pic" src={image} width="700px" alt="place" />
     </div>
 
     <div className="container">
-        <h1>{Name}</h1>
+        <h1 className="shrift">{Name}</h1>
     </div>
 
     <div className="btn container">
