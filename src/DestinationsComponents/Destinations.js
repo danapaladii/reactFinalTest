@@ -13,7 +13,7 @@ return( <div>
         if(selectedCategory === 'All') return true;
         return selectedCategory === destination.category;
     })
-    .map(destination => <Destination destination = {destination} />)}
+    .map(destination => <Destination key={destination} destination = {destination} />)}
     </div>)
 }
 
